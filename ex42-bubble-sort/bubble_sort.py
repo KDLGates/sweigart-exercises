@@ -11,7 +11,7 @@ def bubble_sort(numbers: list) -> list:
         return numbers
 
     for i in range(len(numbers)):
-        for j in range(0, len(numbers) - 1):
+        for j in range(i, len(numbers) - 1):
             if numbers[j] > numbers[j + 1]:
                 swap(numbers, j, j + 1)
     
